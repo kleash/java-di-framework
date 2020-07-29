@@ -2,10 +2,7 @@ package com.github.kleash.di.annotations;
 
 import com.github.kleash.di.config.ClassScope;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 
 /**
@@ -15,6 +12,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
+@Documented
 public @interface Component {
     /**
      * @return Scope of class, default as {@code @ClassScope.SINGLETON}
